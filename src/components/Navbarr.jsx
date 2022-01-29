@@ -15,8 +15,8 @@ function Navbarr() {
                 {/* Navbar.Collapse id="basic-navbar-nav" 이게 왼쪽으로 메뉴들을 모아줌*/}
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/portfolio/jeju">제주</Nav.Link>
-                        <Nav.Link href="/portfolio/memo">메모장</Nav.Link>
+                        <NavLink to="/jeju">제주</NavLink>
+                        <NavLink to="/memo">메모장</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
