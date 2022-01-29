@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Jeju from "../components/Jeju";
 import Navbarr from "../components/Navbarr";
 import Memo from "../components/Memo";
+import Introduce from '../components/Introduce';
 
 function AppRoute() {
     const [user, setUser] = useState(null);
@@ -24,7 +25,8 @@ function AppRoute() {
             <Navbarr/>
             <Routes>
                <Route path="/jeju" element={<Jeju/>}></Route> 
-               <Route path="/memo" element={<Memo user={user === null ? {} : user}/>}></Route> 
+               <Route path="/" element={<Memo user={user === null ? {} : user}/>}></Route> 
+               <Route path="/introduce" element={<Introduce />}></Route>
             </Routes>
         </Router> 
     )

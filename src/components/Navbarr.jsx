@@ -19,11 +19,13 @@ function Navbarr() {
                         <LinkContainer to="/jeju">
                             <NavDropdown.Item >제주</NavDropdown.Item>
                         </LinkContainer>
-                        <LinkContainer to="/memo">
+                        <LinkContainer to="/">
                             <NavDropdown.Item >메모장</NavDropdown.Item>
                         </LinkContainer>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">프로젝트 소개</NavDropdown.Item>
+                        <LinkContainer to="/introduce">
+                        <NavDropdown.Item >프로젝트 소개</NavDropdown.Item>
+                        </LinkContainer>
                     </NavDropdown>
                 </Navbar.Collapse>
             </Container>

@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Image } from "react-bootstrap";
-import axios from "axios";
-import dummyData from "../dummydata/dummyData";
+import { Container, Row, Col } from "react-bootstrap";
 import RequestLogIn from "./RequestLogIn";
 import RequestInput from "./RequestInput";
-import { dbService, storageService } from "../fbase";
+import { dbService } from "../fbase";
 import Memos from './Memos';
 /*
     아이디 비밀번호 입력하는 란 만들고, 아이디 비번입력해서 해당페이지에서 로그인하면

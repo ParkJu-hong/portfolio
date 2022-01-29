@@ -7,7 +7,7 @@ function RequestLogIn() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [newAccount, setNewAccount] = useState(true);
+    const [newAccount, setNewAccount] = useState(false);
     const [error, setError] = useState("");
 
     const onChange = (event) => {
@@ -78,8 +78,9 @@ function RequestLogIn() {
             <div>
                 <button
                  style={{ backgroundColor: "black", color: "white"}}
-                 onClick={()=>{
-                    setNewAccount((prev) => !prev)
+                 onClick={(event)=>{
+                    event.preventDefault();
+                    setNewAccount((prev) => !prev);
                  }}
                  >
                 {newAccount ? "로그인할게요" : "회원가입할게요"}
