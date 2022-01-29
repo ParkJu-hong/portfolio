@@ -16,7 +16,6 @@ function Navbarr() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <NavLink to="/jeju">제주</NavLink>
-                        <NavLink to="/memo">메모장</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
