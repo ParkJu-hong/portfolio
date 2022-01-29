@@ -21,7 +21,7 @@ function AppRoute() {
         })
     },[])
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Navbarr/>
             <Routes>
                <Route path="/jeju" element={<Jeju/>}></Route> 
